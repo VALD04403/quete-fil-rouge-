@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur cars')
+    res.send('Api movie works')
 })
 app.get('/api/movie', (req, res) => {
     connection.query('SELECT * from movie', (err, results) => {
